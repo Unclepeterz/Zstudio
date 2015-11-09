@@ -1,0 +1,29 @@
+package as1;
+import java.util.Scanner;
+public class P1 {
+	public static void main(String[] args){
+		Scanner input= new Scanner (System.in);    
+		Scanner input1= new Scanner (System.in);     
+
+		int n = (int)(Math.random()*100);
+		int x;
+		String y;
+		System.out.print("Please enter your name :");
+		y = input1.next();
+		System.out.print("Please enter a tow-digit number: ");
+		x = input.nextInt();
+		if(x/10==n/10&&x%10==n%10){
+			System.out.print("Congratulations "+y+" ! you win a ￥10000 award!" +"\n"+"The lottery number is " +n);
+		  }
+		else if(x/10==n%10&&x%10==n/10){
+			System.out.print("Congratulations "+y+" ! you win a ￥5000 award!"+"\n"+"The lottery number is " +n );
+			}
+		else if(x/10!=n%10&&x%10!=n/10&&x/10!=n/10&&x%10!=n/10&&x%10!=n%10)	
+	    	System.out.print("Sorry "+y+" wish you can win the award next time!" +"\n"+"The lottery number is " +n);
+		
+	    else 
+			System.out.print("Congratulations "+y+" ! you win a ￥1000 award!"+"\n"+"The lottery number is " +n );
+			}
+		
+}
+
